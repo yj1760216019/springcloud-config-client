@@ -1,0 +1,19 @@
+# 配置eureka注册中心
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7011/eureka/
+
+
+
+# 配置远程配置信息
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config
+      name: order
+      profile: dev
+      label: master
+
